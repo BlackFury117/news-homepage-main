@@ -30,4 +30,31 @@ header{
             }
         }
     }
+
+    /// LAST SECTION
+    .container{  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "div-1 div-1 div-2"
+          "div-3 div-4 div-2"
+          "div-5 div-6 div-7";
+
+        .div-1{ grid-area: div-1; }
+    
+        .div-2{ grid-area: div-2; }
+        
+        .div-3{ grid-area: div-3; }
+        
+        .div-4{ grid-area: div-4; }
+        
+        .div-5{ grid-area: div-5; }
+        
+        .div-6{ grid-area: div-6; }
+        
+        .div-7{ grid-area: div-7; }
+    }
 }
