@@ -13,6 +13,13 @@
     }
 }
 
+@mixin img-setup-mob{
+    img{
+        height: 127px;
+        width: 100px;
+    }
+}
+
 @mixin text-setup{
     .number{
         color: #c8c7ca;
@@ -36,6 +43,12 @@
     .body{
         color: $secondary-color;
         line-height: 1.6;
+    }
+}
+
+@mixin text-setup-mob{
+    .number{
+        font-size: 1.850rem;
     }
 }
 
