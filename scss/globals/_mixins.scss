@@ -1,1 +1,35 @@
 @use 'variables' as *;
+
+@mixin flex-setup{
+    display: flex;
+    align-items: start;
+    gap: 0 20px;
+}
+
+@mixin img-setup{
+    img{
+        height: 140px;
+        width: 110px;
+    }
+}
+
+@mixin text-setup{
+    .number{
+        color: #c8c7ca;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: .4rem;
+    }
+
+    .heading{
+        color: $main-color;
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin-bottom: .6rem;
+    }
+
+    .body{
+        color: $secondary-color;
+        line-height: 1.6;
+    }
+}

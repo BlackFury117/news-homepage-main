@@ -11,7 +11,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 5rem;
+        padding: 3rem 4rem;
 
         .nav-links{
             
@@ -32,29 +32,138 @@ header{
     }
 
     /// LAST SECTION
-    .container{  
+    .container{
+        padding: 0 4rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
+        grid-template-rows: 1fr 220px 210px;
+        gap: 20px 20px;
         grid-auto-flow: row;
         grid-template-areas:
           "div-1 div-1 div-2"
           "div-3 div-4 div-2"
           "div-5 div-6 div-7";
 
-        .div-1{ grid-area: div-1; }
+        .div-1{ 
+            grid-area: div-1;
+            
+            .img-web{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     
-        .div-2{ grid-area: div-2; }
+        .div-2{ 
+            grid-area: div-2;
+            background-color: $main-color;
+            padding: 1.5rem;
+            height: 515px;
+
+            h1{
+                color: hsl(35, 77%, 62%);
+                margin-bottom: 3rem;
+            }
+
+            .header{
+                color: #fff;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: .8rem;
+
+                &:hover{
+                    cursor: pointer;
+                    color: hsl(35, 77%, 62%);
+                }
+            }
+
+            .text{
+                color: $secondary-color;
+                font-size: .9rem;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+            }
+
+            .horizontal-line{
+                background-color: $secondary-color;
+                height: .0555rem;
+                margin-bottom: 2rem;
+            }
+        }
         
-        .div-3{ grid-area: div-3; }
+        .div-3{ 
+            grid-area: div-3;
+            
+            h2{
+                color: $main-color;
+                font-size: 3.5rem;
+            }
+        }
         
-        .div-4{ grid-area: div-4; }
+        .div-4{ 
+            grid-area: div-4;
+
+            p{
+                color: $secondary-color;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 3rem;
+            }
+
+            a{
+                background-color: hsl(5, 85%, 63%);
+                padding: .9rem 2.5rem;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: .9rem;
+                font-weight: 600;
+                letter-spacing: .25rem;
+
+                &:hover{
+                    background-color: $main-color;
+                }
+            }
+        }
         
-        .div-5{ grid-area: div-5; }
+        .div-5{ 
+            grid-area: div-5;
+            height: 200px;
+            @include flex-setup;
+
+            .img-retro{
+                @include img-setup;
+            }
+
+            .text-retro{
+                @include text-setup;
+            }
+        }
         
-        .div-6{ grid-area: div-6; }
+        .div-6{ 
+            grid-area: div-6;
+            height: 200px;
+            @include flex-setup;
+
+            .img-laptop{
+                @include img-setup;
+            }
+
+            .text-laptop{
+                @include text-setup;
+            }
+        }
         
-        .div-7{ grid-area: div-7; }
+        .div-7{ 
+            grid-area: div-7;
+            height: 200px; 
+            @include flex-setup;
+
+            .img-gaming{
+                @include img-setup;
+            }
+
+            .text-gaming{
+                @include text-setup;
+            }
+        }
     }
 }
