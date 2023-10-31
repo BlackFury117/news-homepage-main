@@ -26,10 +26,21 @@
         font-size: 1.2rem;
         font-weight: 800;
         margin-bottom: .6rem;
+
+        &:hover{
+            cursor: pointer;
+            color: hsl(5, 85%, 63%);
+        }
     }
 
     .body{
         color: $secondary-color;
         line-height: 1.6;
+    }
+}
+
+@mixin mobile-view{
+    @media only screen and (max-width: 600px){
+      @content;
     }
 }
