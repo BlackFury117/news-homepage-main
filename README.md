@@ -2,7 +2,7 @@
 
 ![Design preview for the News homepage coding challenge](/design/screenshot-of-my-work.jpg) <br>
 
-This is a solution to the [News homepage landing page challenge on Frontend Mentor](). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
+This is a solution to the [News homepage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-solution-ZF6-dM1gG8). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
 
 ## Built with
 
@@ -13,7 +13,7 @@ This is a solution to the [News homepage landing page challenge on Frontend Ment
 - Javascript
 - Mobile-first workflow
 
-Preview it here - [News homepage]() <br><br>
+Preview it here - [News homepage](https://id-dev3.github.io/news-homepage-main/) <br><br>
 
 ## Author
 
